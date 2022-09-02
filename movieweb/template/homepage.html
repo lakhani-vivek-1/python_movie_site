@@ -1,0 +1,25 @@
+{% include 'index.html' %}
+{% block content %}
+
+<section id="movies-list">
+        {% for j,i in imgurl %}
+        <div class="movies-box" id = "movies_box">
+            <div class="movies-img">
+                <div class="quality">HDRip</div>
+                <img src={{ i }}>
+                
+
+            </div>
+            <a class="variable">{{ j }}</a>
+            
+            
+
+        </div> 
+        
+        {%endfor%}
+         
+         
+         
+        
+    </section>
+{% endblock content %}
